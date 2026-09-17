@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Le Grenier | Ranskalainen Kahvila & Leipomo Helsinki</title>
-  <meta name="description" content="Aito ranskalainen kahvila ja leipomo Helsingin Meilahdessa. Tuoreet croissantit, artesaanileivonnaiset ja erikoiskahvit." />
+  <title>Le Grenier | Ranskalainen Artesaanileipomo & Kahvila Helsinki</title>
+  <meta name="description" content="Aito ranskalainen artesaanileipomo ja kahvila Helsingin Meilahdessa (Pihlajatie 8). Tuoreet croissantit, leivät, konditoriatuotteet ja aamiainen." />
   
   <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,9 +23,9 @@
           colors: {
             cream: {
               50: '#FDFBF7',
-              100: '#F7F3EB',
-              200: '#EFE7D8',
-              300: '#DFD2BC',
+              100: '#F8F4EC',
+              200: '#EDE4D4',
+              300: '#DCCDB4',
             },
             rouge: {
               500: '#A33343',
@@ -54,7 +54,6 @@
   </script>
 
   <style>
-    /* Плавные переходы и кастомный скроллбар */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -62,7 +61,7 @@
       background: #FDFBF7;
     }
     ::-webkit-scrollbar-thumb {
-      background: #DFD2BC;
+      background: #DCCDB4;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
@@ -71,7 +70,7 @@
     .glass-nav {
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      background-color: rgba(253, 251, 247, 0.92);
+      background-color: rgba(253, 251, 247, 0.94);
     }
   </style>
 </head>
@@ -84,7 +83,7 @@
       <!-- Brand Logo -->
       <a href="#" class="flex flex-col items-start group">
         <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-rouge-600 group-hover:text-rouge-700 transition">Le Grenier</span>
-        <span class="text-[10px] tracking-[0.25em] uppercase text-espresso-700 font-medium">Boulangerie & Pâtisserie</span>
+        <span class="text-[9px] sm:text-[10px] tracking-[0.25em] uppercase text-espresso-700 font-semibold" data-i18n="navSubtitle">Artesaanileipomo & Kahvila</span>
       </a>
 
       <!-- Desktop Navigation Links -->
@@ -141,17 +140,14 @@
 
   <!-- ==================== HERO SECTION ==================== -->
   <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
-    <!-- Subtle Background Elements -->
     <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-rouge-500/5 blur-3xl -z-10"></div>
     <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-gold-400/10 blur-3xl -z-10"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         
-        <!-- Hero Text -->
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
           
-          <!-- Live Status & Address Badge -->
           <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cream-200/70 border border-cream-300 text-xs font-medium text-espresso-800">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span data-i18n="heroBadgeStatus">Tervetuloa Meilahteen</span>
@@ -161,17 +157,15 @@
             </span>
           </div>
 
-          <!-- Main Catchphrase -->
           <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-espresso-900 leading-[1.15]">
-            <span data-i18n="heroTitlePart1">Pariisin tuoksu ja</span><br/>
-            <span class="text-rouge-600 italic font-normal" data-i18n="heroTitlePart2">artesaanileivonnan taika</span>
+            <span data-i18n="heroTitlePart1">Aito ranskalainen</span><br/>
+            <span class="text-rouge-600 italic font-normal" data-i18n="heroTitlePart2">artesaanileipomo Helsingissä</span>
           </h1>
 
           <p class="text-base sm:text-lg text-espresso-700 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed" data-i18n="heroSubtitle">
-            Rapeat artesaanicroissantit, huolella haudutettu kahvi ja perinteiset ranskalaiset konditoriatuotteet leivottu joka aamu puhtaalla intohimolla.
+            Tuoreet leivät, suussasulavat croissantit, korvapuustit ja klassiset ranskalaiset konditoriatuotteet leivottu joka aamu paikan päällä.
           </p>
 
-          <!-- CTAs -->
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
             <a href="#menu" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-rouge-600 hover:bg-rouge-700 text-white font-medium text-sm text-center shadow-lg hover:shadow-rouge-600/30 transition transform hover:-translate-y-0.5" data-i18n="heroCtaMenu">
               Tutustu Menuun
@@ -181,42 +175,38 @@
             </a>
           </div>
 
-          <!-- Highlights Bar -->
           <div class="pt-8 border-t border-cream-200 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
             <div>
+              <p class="font-serif text-2xl font-bold text-rouge-600">2,00 €</p>
+              <p class="text-xs text-espresso-700 uppercase tracking-wider" data-i18n="statCroissant">Voi-croissant</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl font-bold text-rouge-600">12,20 €</p>
+              <p class="text-xs text-espresso-700 uppercase tracking-wider" data-i18n="statBreakfast">Aamiainen</p>
+            </div>
+            <div>
               <p class="font-serif text-2xl font-bold text-rouge-600">100%</p>
-              <p class="text-xs text-espresso-700 uppercase tracking-wider" data-i18n="statFrenchButter">Ranskalaista voita</p>
-            </div>
-            <div>
-              <p class="font-serif text-2xl font-bold text-rouge-600">07:30</p>
-              <p class="text-xs text-espresso-700 uppercase tracking-wider" data-i18n="statBakedDaily">Tuoretta joka aamu</p>
-            </div>
-            <div>
-              <p class="font-serif text-2xl font-bold text-rouge-600">4.9 ★</p>
-              <p class="text-xs text-espresso-700 uppercase tracking-wider" data-i18n="statGuestRating">Asiakastyytyväisyys</p>
+              <p class="text-xs text-espresso-700 uppercase tracking-wider" data-i18n="statArtisan">Käsityötä</p>
             </div>
           </div>
         </div>
 
-        <!-- Hero Visual Collage -->
         <div class="lg:col-span-5 relative">
           <div class="relative mx-auto max-w-md lg:max-w-none">
-            <!-- Main Hero Image -->
-            <div class="overflow-hidden rounded-3xl shadow-2xl border-4 border-cream-100 aspect-[4/5] object-cover">
+            <div class="overflow-hidden rounded-3xl shadow-2xl border-4 border-cream-100 aspect-[4/5]">
               <img 
                 src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1000&auto=format&fit=crop" 
-                alt="French Croissants and Pastries at Le Grenier" 
+                alt="Ranskalainen artesaanileipomo Le Grenier" 
                 class="w-full h-full object-cover hover:scale-105 transition duration-700"
               />
             </div>
-            <!-- Floating Aesthetic Tag -->
             <div class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-cream-200 flex items-center space-x-3.5">
               <div class="w-12 h-12 rounded-xl bg-rouge-500/10 flex items-center justify-center text-rouge-600 text-xl">
-                <i class="fa-solid fa-mug-hot"></i>
+                <i class="fa-solid fa-wheat-awn"></i>
               </div>
               <div>
-                <p class="text-xs text-espresso-700 font-medium" data-i18n="heroFloatBadgeSub">Erikoiskahvit & Leivonnaiset</p>
-                <p class="font-serif text-sm font-bold text-espresso-900" data-i18n="heroFloatBadgeTitle">Pariisilainen Aamiainen</p>
+                <p class="text-xs text-espresso-700 font-medium" data-i18n="heroFloatBadgeSub">Uunituoreet leivät & herkut</p>
+                <p class="font-serif text-sm font-bold text-espresso-900" data-i18n="heroFloatBadgeTitle">Artesaanileipomo</p>
               </div>
             </div>
           </div>
@@ -231,44 +221,42 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
-        <!-- Images Duo -->
         <div class="grid grid-cols-2 gap-4">
           <div class="space-y-4">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" alt="Artesaanileipuri" class="rounded-2xl shadow-md object-cover h-64 w-full" />
-            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=800&auto=format&fit=crop" alt="Ranskalainen leivos" class="rounded-2xl shadow-md object-cover h-44 w-full" />
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" alt="Leivontaprosessi" class="rounded-2xl shadow-md object-cover h-64 w-full" />
+            <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=800&auto=format&fit=crop" alt="Pâtisserie" class="rounded-2xl shadow-md object-cover h-44 w-full" />
           </div>
           <div class="space-y-4 pt-8">
-            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=800&auto=format&fit=crop" alt="Kahvilan miljöö" class="rounded-2xl shadow-md object-cover h-44 w-full" />
-            <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=800&auto=format&fit=crop" alt="Tuoreet baguetit ja leivät" class="rounded-2xl shadow-md object-cover h-64 w-full" />
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=800&auto=format&fit=crop" alt="Kahvila Meilahti" class="rounded-2xl shadow-md object-cover h-44 w-full" />
+            <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?q=80&w=800&auto=format&fit=crop" alt="Hapanjuurileivät" class="rounded-2xl shadow-md object-cover h-64 w-full" />
           </div>
         </div>
 
-        <!-- Story Content -->
         <div class="space-y-6">
           <span class="text-xs uppercase font-bold tracking-widest text-rouge-600" data-i18n="aboutBadge">Filosofiamme</span>
           <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 leading-snug" data-i18n="aboutTitle">
-            Pala Pariisia Helsingin Meilahden sydämessä
+            Pariisin tuoksu ja lämpö Meilahden sydämessä
           </h2>
           <p class="text-espresso-700 leading-relaxed font-light" data-i18n="aboutDesc1">
-            Le Grenier syntyi haaveesta tuoda ranskalaisen leivontakulttuurin sielukkuus ja artesaanilaatu pohjoiseen. Me uskomme, että täydellinen aamu alkaa rapsahtavan lehtevällä croissantilla, aidoilla ranskalaisilla raaka-aineilla ja kiireettömällä kahvihetkellä.
+            Le Grenier on ranskalaisen leivontaperinteen ja pohjoismaisen kodikkuuden kohtaamispaikka. Vaalimme aitoa käsityötä: nostatamme hapanjuuritaikinat huolellisesti, käytämme aitoa voita ja leivomme päivän tuotteet joka aamu omassa leipomossamme.
           </p>
           <p class="text-espresso-700 leading-relaxed font-light" data-i18n="aboutDesc2">
-            Jokainen taikina nostatetaan pitkään ja leivotaan käsin joka aamuyö. Emme tee kompromisseja voin, jauhojen tai suklaan laadussa — jokainen pala kantaa mukanaan ranskalaisen pikkukahvilan lämpöä.
+            Valikoimastamme löydät niin ikoniset ranskalaiset leivonnaiset — croissantit, choux-leivokset, opéra-kakut ja éclairit — kuin suomalaisille rakkaat korvapuustit sekä täytetyt sämpylät ja patongit.
           </p>
 
           <div class="pt-4 grid grid-cols-2 gap-4">
             <div class="flex items-start space-x-3">
               <i class="fa-solid fa-wheat-awn text-gold-500 text-lg mt-1"></i>
               <div>
-                <h3 class="font-semibold text-espresso-900 text-sm" data-i18n="aboutFeature1Title">Artesaanijuuri</h3>
-                <p class="text-xs text-espresso-700" data-i18n="aboutFeature1Desc">Pitkä nostatusaika ja rikas aromi</p>
+                <h3 class="font-semibold text-espresso-900 text-sm" data-i18n="aboutFeature1Title">Levain & Ruislese</h3>
+                <p class="text-xs text-espresso-700" data-i18n="aboutFeature1Desc">Aito hapanjuuri ja pitkä lepoaika</p>
               </div>
             </div>
             <div class="flex items-start space-x-3">
-              <i class="fa-solid fa-heart text-rouge-600 text-lg mt-1"></i>
+              <i class="fa-solid fa-fire-burner text-rouge-600 text-lg mt-1"></i>
               <div>
-                <h3 class="font-semibold text-espresso-900 text-sm" data-i18n="aboutFeature2Title">Rakkaus yksityiskohtiin</h3>
-                <p class="text-xs text-espresso-700" data-i18n="aboutFeature2Desc">Klassiset reseptit ja huippuraaka-aineet</p>
+                <h3 class="font-semibold text-espresso-900 text-sm" data-i18n="aboutFeature2Title">Aamiainen & Lounas</h3>
+                <p class="text-xs text-espresso-700" data-i18n="aboutFeature2Desc">Lämpimät quichet ja runsaat menut</p>
               </div>
             </div>
           </div>
@@ -280,186 +268,384 @@
 
   <!-- ==================== MENU SECTION ==================== -->
   <section id="menu" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="text-xs uppercase font-bold tracking-widest text-rouge-600" data-i18n="menuBadge">Herkulliset Elämykset</span>
-      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mt-2" data-i18n="menuTitle">Kahvilan & Leipomon Menu</h2>
-      <p class="text-espresso-700 text-sm mt-3 font-light" data-i18n="menuSubtitle">Valikoimamme leivotaan tuoreena joka aamu. Kysy henkilökunnalta päivän erikoisuuksista!</p>
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <span class="text-xs uppercase font-bold tracking-widest text-rouge-600" data-i18n="menuBadge">Artesaanileipomon Liitutaulu</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso-900 mt-2" data-i18n="menuTitle">Päivän Menu & Hinnasto</h2>
+      <p class="text-espresso-700 text-sm mt-3 font-light" data-i18n="menuSubtitle">Kaikki tuotteemme leivotaan paikan päällä puhtaista raaka-aineista.</p>
       
+      <!-- Special Combos Callout -->
+      <div class="mt-6 inline-flex flex-wrap justify-center items-center gap-3 bg-rouge-600/10 border border-rouge-600/20 p-2 sm:p-2.5 rounded-2xl">
+        <span class="px-3 py-1 bg-rouge-600 text-white text-xs font-semibold rounded-xl">
+          <i class="fa-solid fa-star mr-1"></i> <span data-i18n="badgeAamiainen">Aamiainen</span>: 12,20 €
+        </span>
+        <span class="px-3 py-1 bg-espresso-900 text-white text-xs font-semibold rounded-xl">
+          <i class="fa-solid fa-utensils mr-1"></i> <span data-i18n="badgeLounas">Lounasmenu</span>: 11,00 €
+        </span>
+      </div>
+
       <!-- Menu Categories Tabs -->
       <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mt-8">
-        <button onclick="filterMenu('pastry')" id="tab-pastry" class="menu-tab px-5 py-2 rounded-full text-xs font-semibold bg-rouge-600 text-white shadow transition">
-          <i class="fa-solid fa-bread-slice mr-1.5"></i> <span data-i18n="tabPastry">Leivonnaiset & Croissantit</span>
+        <button onclick="filterMenu('pastry')" id="tab-pastry" class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-rouge-600 text-white shadow transition">
+          <i class="fa-solid fa-croissant mr-1.5"></i> <span data-i18n="tabPastry">Leivonnaiset & Pullat</span>
         </button>
-        <button onclick="filterMenu('desserts')" id="tab-desserts" class="menu-tab px-5 py-2 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition">
-          <i class="fa-solid fa-cake-candles mr-1.5"></i> <span data-i18n="tabDesserts">Konditoria & Kakut</span>
+        <button onclick="filterMenu('desserts')" id="tab-desserts" class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition">
+          <i class="fa-solid fa-cake-candles mr-1.5"></i> <span data-i18n="tabDesserts">Konditoria & Herkut</span>
         </button>
-        <button onclick="filterMenu('breakfast')" id="tab-breakfast" class="menu-tab px-5 py-2 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition">
-          <i class="fa-solid fa-egg mr-1.5"></i> <span data-i18n="tabBreakfast">Aamupala & Suolaiset</span>
+        <button onclick="filterMenu('savory')" id="tab-savory" class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition">
+          <i class="fa-solid fa-bread-slice mr-1.5"></i> <span data-i18n="tabSavory">Leivät & Suolaiset</span>
         </button>
-        <button onclick="filterMenu('drinks')" id="tab-drinks" class="menu-tab px-5 py-2 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition">
+        <button onclick="filterMenu('drinks')" id="tab-drinks" class="menu-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition">
           <i class="fa-solid fa-mug-saucer mr-1.5"></i> <span data-i18n="tabDrinks">Kahvit & Juomat</span>
         </button>
       </div>
     </div>
 
     <!-- Menu Items Grid -->
-    <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      <!-- Category 1: Pastry -->
-      <div class="menu-item pastry bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <!-- ================= CATEGORY 1: PASTRIES & BUNS ================= -->
+      <div class="menu-item pastry bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mCroissantTitle">Croissant au Beurre</h3>
-            <span class="font-bold text-rouge-600 ml-2">3.80 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_croissant_title">Croissant</h3>
+            <span class="font-bold text-rouge-600 text-base">2,00 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mCroissantDesc">
-            Perinteinen ranskalainen voicroissant. Täydellisen rapea kuori ja ilmavan lehtevä sisus.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_croissant_desc">Perinteinen voicroissant, jossa on rapea kuori ja lehtevä sisus.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Ranskalainen voi</span>
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Klassikko</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagClassic">Klassikko</span>
       </div>
 
-      <div class="menu-item pastry bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item pastry bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mChocolatTitle">Pain au Chocolat</h3>
-            <span class="font-bold text-rouge-600 ml-2">4.20 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_pain_chocolat_title">Pain au chocolat</h3>
+            <span class="font-bold text-rouge-600 text-base">3,00 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mChocolatDesc">
-            Voitaikinaleivos kahdella tangolla täyteläistä tummaa Valrhona-suklaata.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_pain_chocolat_desc">Klassinen ranskalainen voitaikinaleivos tummalla suklaalla.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Valrhona</span>
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Suosikki</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagChoc">Tumma suklaa</span>
       </div>
 
-      <div class="menu-item pastry bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item pastry bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mAlmondTitle">Croissant aux Amandes</h3>
-            <span class="font-bold text-rouge-600 ml-2">4.90 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_juustocroissant_title">Juustocroissant</h3>
+            <span class="font-bold text-rouge-600 text-base">3,00 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mAlmondDesc">
-            Mantelikreemillä täytetty ja paahdetuilla mantelilastuilla viimeistelty tuplapaistettu croissant.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_juustocroissant_desc">Juustolla gratinoitu lehtevä ja suolainen croissant.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Manteli</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagSavory">Suolainen</span>
       </div>
 
-      <!-- Category 2: Desserts -->
-      <div class="menu-item desserts hidden bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item pastry bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mEclairTitle">Éclair au Chocolat</h3>
-            <span class="font-bold text-rouge-600 ml-2">5.50 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_manteli_title">Mantelicroissant</h3>
+            <span class="font-bold text-rouge-600 text-base">3,60 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mEclairDesc">
-            Tuulihattutaikina, samettinen suklaakreemitäyte ja kiiltävä tummasuklaakuorrute.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_manteli_desc">Tuplapaistettu croissant mantelikreemitäytteellä ja paahdetuilla mantelilastuilla.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Konditoria</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagHouseFav">Suosikki</span>
       </div>
 
-      <div class="menu-item desserts hidden bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item pastry bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mCitronTitle">Tartelette au Citron Meringuée</h3>
-            <span class="font-bold text-rouge-600 ml-2">6.20 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_korvapuusti_title">Korvapuusti</h3>
+            <span class="font-bold text-rouge-600 text-base">3,20 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mCitronDesc">
-            Kirpeän raikas sitruunatahna murealla murotaikinapohjalla, päällä paahdettua marenkia.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_korvapuusti_desc">Perinteinen kanelipulla reilulla kardemummalla ja kanelivoitäytteellä.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Raikas</span>
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Marenki</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagNordic">Pohjoismainen</span>
       </div>
 
-      <div class="menu-item desserts hidden bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item pastry bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mMacaronTitle">Macarons Artisanaux (3 kpl)</h3>
-            <span class="font-bold text-rouge-600 ml-2">6.50 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_voisilma_title">Voisilmäpulla</h3>
+            <span class="font-bold text-rouge-600 text-base">3,20 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mMacaronDesc">
-            Valikoima ranskalaisia mantelileivoksia: vadelma, pistaasi ja suolakinuski.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_voisilma_desc">Pehmeä pulla sokeroidulla voisydämellä ja kardemummalla.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Gluteeniton ainesosa</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagFreshBaked">Uunituore</span>
       </div>
 
-      <!-- Category 3: Breakfast & Savory -->
-      <div class="menu-item breakfast hidden bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <!-- ================= CATEGORY 2: PÂTISSERIE & DESSERTS ================= -->
+      <div class="menu-item desserts hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mQuicheTitle">Quiche Lorraine</h3>
-            <span class="font-bold text-rouge-600 ml-2">7.80 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_eclair_title">Éclair</h3>
+            <span class="font-bold text-rouge-600 text-base">4,30 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mQuicheDesc">
-            Perinteinen ranskalainen piiras: savustettua pekonia, emmental-juustoa ja pehmeää kermatäytettä.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_eclair_desc">Pitkänomainen tuulihattuleivos silkkisellä kreemitäytteellä ja kuorrutteella.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Lämmin suolainen</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Pâtisserie</span>
       </div>
 
-      <div class="menu-item breakfast hidden bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item desserts hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mBaguetteTitle">Baguette Jambon-Beurre</h3>
-            <span class="font-bold text-rouge-600 ml-2">8.50 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_choux_title">Choux</h3>
+            <span class="font-bold text-rouge-600 text-base">4,30 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mBaguetteDesc">
-            Rapeaa talon patonkia, laadukasta maalaiskinkkua, aitoa kirnuvoita ja dijon-sinappia.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_choux_desc">Rapea tuulihattuleivos runsaalla vaniljakreemitäytteellä (Craquelin).</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Klassikko-lounas</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Pâtisserie</span>
       </div>
 
-      <!-- Category 4: Drinks -->
-      <div class="menu-item drinks hidden bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item desserts hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mCafeAuLaitTitle">Café au Lait</h3>
-            <span class="font-bold text-rouge-600 ml-2">4.50 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_amandine_title">Amandine</h3>
+            <span class="font-bold text-rouge-600 text-base">4,30 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mCafeAuLaitDesc">
-            Tummapaahtoista erikoiskahvia ja runsaasti pehmeää vaahdotettua maitoa isossa kulhossa tai kupissa.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_amandine_desc">Perinteinen ranskalainen mantelileivos täyteläisellä mantelitäytteellä.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Erikoiskahvi</span>
-        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Amande</span>
       </div>
 
-      <div class="menu-item drinks hidden bg-cream-100/50 rounded-2xl p-5 border border-cream-200/80 hover:shadow-xl hover:border-gold-400/40 transition duration-300 flex flex-col justify-between">
+      <div class="menu-item desserts hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
         <div>
-          <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="mChocolatChaudTitle">Chocolat Chaud Parisien</h3>
-            <span class="font-bold text-rouge-600 ml-2">5.20 €</span>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_fraisier_title">Fraisier</h3>
+            <span class="font-bold text-rouge-600 text-base">4,80 €</span>
           </div>
-          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-4" data-i18n="mChocolatChaudDesc">
-            Paksu ja samettisen täyteläinen kuuma kaakao sulatetusta tummasta suklaasta.
-          </p>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_fraisier_desc">Klassinen ranskalainen mansikkaleivos, mousseline-kreemi ja pehmeä kakkupohja.</p>
         </div>
-        <div class="flex items-center gap-2 pt-2 border-t border-cream-200/60 text-[10px] font-semibold text-espresso-700 uppercase">
-          <span class="bg-cream-200 px-2 py-0.5 rounded">Talon erikoisuus</span>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagFresh">Raikas</span>
+      </div>
+
+      <div class="menu-item desserts hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_opera_title">Opéra</h3>
+            <span class="font-bold text-rouge-600 text-base">4,80 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_opera_desc">Hienostunut kerrosleivos kahvisiirapilla, suklaaganachella ja kahvikreemillä.</p>
         </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Grand Classique</span>
+      </div>
+
+      <div class="menu-item desserts hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_millefeuille_title">Mille-feuilles</h3>
+            <span class="font-bold text-rouge-600 text-base">5,40 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_millefeuille_desc">Rapeita karamellisoituja voitaikinakerroksia ja vaniljaista konditoriakreemiä.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagChefSpecial">Erikoisuus</span>
+      </div>
+
+      <!-- ================= CATEGORY 3: BREADS & SAVORY ================= -->
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_levain_title">Levain-patonki</h3>
+            <span class="font-bold text-rouge-600 text-base">3,60 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_levain_desc">Perinteinen hapanjuuripatonki, rapea kuori ja ilmava sitkeä sisus.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Hapanjuuri</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_batard_title">Bâtard</h3>
+            <span class="font-bold text-rouge-600 text-base">3,80 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_batard_desc">Soikea ranskalainen artesaanijuurella leivottu maalaileipä.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Pain de Campagne</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_ruislese_title">Ruislese</h3>
+            <span class="font-bold text-rouge-600 text-base">3,80 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_ruislese_desc">Rukiinen ja kuitupitoinen artesaanileipä syvällä maulla.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Ruis / Rye</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_monisiemen_title">Monisiemensämpylä</h3>
+            <span class="font-bold text-rouge-600 text-base">1,60 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_monisiemen_desc">Tuore artesaanisämpylä runsailla auringonkukan- ja pellavansiemenillä.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Siemenet</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_porkkana_title">Porkkanasämpylä</h3>
+            <span class="font-bold text-rouge-600 text-base">1,20 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_porkkana_desc">Mehevä ja pehmeä aamiaissämpylä aidolla porkkanaraasteella.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Porkkana</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_quiche_title">Quiche</h3>
+            <span class="font-bold text-rouge-600 text-base">5,70 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_quiche_desc">Päivän lämmin ranskalainen piiras rapealla pohjalla ja kermaisella täytteellä.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagHotSavory">Lämmin ruoka</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_taytetty_croissant_title">Täytetty croissant</h3>
+            <span class="font-bold text-rouge-600 text-base">5,70 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_taytetty_croissant_desc">Tuore croissant täytettynä juustolla, laadukkaalla kinkulla tai kasviksilla.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Aamiainen</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_taytetty_sampyla_title">Täytetty sämpylä</h3>
+            <span class="font-bold text-rouge-600 text-base">5,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_taytetty_sampyla_desc">Juureen leivottu sämpylä runsailla tuoreilla täytteillä.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Tuore</span>
+      </div>
+
+      <div class="menu-item savory hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_sandwich_title">Sandwich</h3>
+            <span class="font-bold text-rouge-600 text-base">6,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_sandwich_desc">Runsas ranskalainen patonki- tai leipävoileipä artesaanitäytteillä.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Lounas</span>
+      </div>
+
+      <!-- ================= CATEGORY 4: COFFEE & DRINKS ================= -->
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_americano_title">Americano</h3>
+            <span class="font-bold text-rouge-600 text-base">4,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_americano_desc">Espresso pidennettynä kuumalla vedellä, syvä ja pehmeä maku.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Erikoiskahvi</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_cappuccino_title">Cappuccino</h3>
+            <span class="font-bold text-rouge-600 text-base">3,50 / 4,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_cappuccino_desc">Täydellisen tasapainoinen espresso ja silkkinen maitovaahto.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Normaali / Iso</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_cafelatte_title">Café latte</h3>
+            <span class="font-bold text-rouge-600 text-base">4,50 / 5,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_cafelatte_desc">Mieto ja kermainen maitokahvi tuoreella espressopohjalla.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Normaali / Iso</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_jaalatte_title">Jää latte</h3>
+            <span class="font-bold text-rouge-600 text-base">4,30 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_jaalatte_desc">Raikas kylmä maitokahvi jäillä ja vahvalla espressolla.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start" data-i18n="tagCold">Kylmä juoma</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_espresso_title">Espresso</h3>
+            <span class="font-bold text-rouge-600 text-base">3,00 / 4,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_espresso_desc">Voimakas ja intensiivinen italialais-ranskalainen kahviuute.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Single / Double</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_kahvi_title">Kahvi (Suodatinkahvi)</h3>
+            <span class="font-bold text-rouge-600 text-base">3,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_kahvi_desc">Tuore ja laadukas paikan päällä suodatettu suodatinkahvi.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Päivän kahvi</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_cafeaulait_title">Café au lait</h3>
+            <span class="font-bold text-rouge-600 text-base">4,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_cafeaulait_desc">Perinteinen ranskalainen maitokahvi aamukuppiin tarjoiltuna.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Tradition</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_kaakao_title">Kaakao</h3>
+            <span class="font-bold text-rouge-600 text-base">3,50 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_kaakao_desc">Täyteläinen ja pehmeä kuuma suklaakaakao.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Hot Chocolate</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_tee_title">Tee</h3>
+            <span class="font-bold text-rouge-600 text-base">2,70 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_tee_desc">Haudutettu laadukas irtotee (musta, vihreä, yrtti).</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Thé</span>
+      </div>
+
+      <div class="menu-item drinks hidden bg-cream-100/60 rounded-2xl p-5 border border-cream-200/90 hover:shadow-xl hover:border-gold-400/50 transition duration-300 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-start mb-1.5">
+            <h3 class="font-serif text-lg font-bold text-espresso-900" data-i18n="m_kylmat_title">Soda / Vichy / Mehu</h3>
+            <span class="font-bold text-rouge-600 text-base">3,00 €</span>
+          </div>
+          <p class="text-xs text-espresso-700 leading-relaxed font-light mb-3" data-i18n="m_kylmat_desc">Virvoitusjuomat, kivennäisvedet tai raikkaat mehut.</p>
+        </div>
+        <span class="text-[10px] font-semibold text-espresso-700 uppercase bg-cream-200/70 px-2 py-0.5 rounded self-start">Kylmät</span>
       </div>
 
     </div>
@@ -471,8 +657,8 @@
           <i class="fa-solid fa-bag-shopping"></i>
         </div>
         <div>
-          <h4 class="font-bold text-espresso-900 text-sm" data-i18n="woltBannerTitle">Haluatko aamiaiset kotiin tai toimistolle?</h4>
-          <p class="text-xs text-espresso-700" data-i18n="woltBannerDesc">Nouda suoraan kahvilasta tai tilaa kotiinkuljetuksella.</p>
+          <h4 class="font-bold text-espresso-900 text-sm" data-i18n="woltBannerTitle">Haluatko tuoretta leipää ja herkkuja kotiin?</h4>
+          <p class="text-xs text-espresso-700" data-i18n="woltBannerDesc">Nouda suoraan Meilahden leipomosta tai tilaa kotiinkuljetuksella.</p>
         </div>
       </div>
       <a href="https://wolt.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full bg-espresso-900 text-white hover:bg-rouge-600 text-xs font-semibold transition tracking-wider uppercase">
@@ -492,19 +678,19 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="relative overflow-hidden rounded-2xl group h-64">
           <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Tuoreet croissantit" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
-          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Croissant au Beurre</div>
+          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Croissantit & Leivonnaiset</div>
         </div>
         <div class="relative overflow-hidden rounded-2xl group h-64">
           <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Erikoiskahvi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
-          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Café Crème</div>
+          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Café Latte & Espresso</div>
         </div>
         <div class="relative overflow-hidden rounded-2xl group h-64">
-          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600&auto=format&fit=crop" alt="Ranskalaiset leivonnaiset" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
-          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Pâtisserie Fine</div>
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=600&auto=format&fit=crop" alt="Pâtisserie" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Mille-feuilles & Éclairs</div>
         </div>
         <div class="relative overflow-hidden rounded-2xl group h-64">
-          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop" alt="Kahvilan pöytä ja miljöö" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
-          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Tunnelma Meilahdessa</div>
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop" alt="Meilahti miljöö" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+          <div class="absolute inset-0 bg-espresso-900/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4 text-white text-xs font-medium">Pihlajatie 8, Meilahti</div>
         </div>
       </div>
     </div>
@@ -585,14 +771,13 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Review 1 -->
         <div class="bg-white p-7 rounded-2xl border border-cream-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="text-gold-500 flex space-x-1 mb-3 text-xs">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <p class="text-xs sm:text-sm text-espresso-800 leading-relaxed font-light italic mb-6" data-i18n="review1Text">
-              "Koko Helsingin parhaat croissantit, ei epäilystäkään. Kuori rouskuu ja voi maistuu taivaalliselta. Tuntuu kuin istuisi pariisilaisessa bistrossa Meilahden sijaan."
+              "Koko Helsingin parhaat croissantit ja mantelikierre! Kuori rouskuu ja voi maistuu aidolta. Tuntuu kuin istuisi pariisilaisessa leipomossa Meilahden sijaan."
             </p>
           </div>
           <div class="flex items-center space-x-3 pt-3 border-t border-cream-100">
@@ -604,14 +789,13 @@
           </div>
         </div>
 
-        <!-- Review 2 -->
         <div class="bg-white p-7 rounded-2xl border border-cream-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="text-gold-500 flex space-x-1 mb-3 text-xs">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <p class="text-xs sm:text-sm text-espresso-800 leading-relaxed font-light italic mb-6" data-i18n="review2Text">
-              "A true hidden gem! The almond croissant and dark hot chocolate are out of this world. Super friendly service and cozy, quiet ambience."
+              "A true gem in Helsinki! The almond croissant and fresh levain baguette are unmatched. Great coffee and quiet, lovely atmosphere."
             </p>
           </div>
           <div class="flex items-center space-x-3 pt-3 border-t border-cream-100">
@@ -623,14 +807,13 @@
           </div>
         </div>
 
-        <!-- Review 3 -->
         <div class="bg-white p-7 rounded-2xl border border-cream-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="text-gold-500 flex space-x-1 mb-3 text-xs">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <p class="text-xs sm:text-sm text-espresso-800 leading-relaxed font-light italic mb-6" data-i18n="review3Text">
-              "Невероятно уютная кондитерская. Лимонный тарт с меренгой — это шедевр! Идеальный баланс кислинки и сладости. Обязательно вернемся."
+              "Невероятное место! Мильфей и шу с кремом просто бесподобны, а свежий багет на закваске покупаем домой каждую неделю. Браво пекарям!"
             </p>
           </div>
           <div class="flex items-center space-x-3 pt-3 border-t border-cream-100">
@@ -649,14 +832,12 @@
   <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       
-      <!-- Contact Card & Opening Hours -->
       <div class="lg:col-span-5 bg-cream-100 p-8 rounded-3xl border border-cream-200 space-y-8">
         <div>
           <span class="text-xs uppercase font-bold tracking-widest text-rouge-600" data-i18n="contactBadge">Tule käymään</span>
           <h2 class="font-serif text-3xl font-bold text-espresso-900 mt-1" data-i18n="contactTitle">Sijainti & Aukioloajat</h2>
         </div>
 
-        <!-- Address & Contact items -->
         <div class="space-y-4 text-sm text-espresso-800">
           <div class="flex items-start space-x-3.5">
             <i class="fa-solid fa-location-dot text-rouge-600 text-lg mt-0.5"></i>
@@ -686,7 +867,6 @@
           </div>
         </div>
 
-        <!-- Opening Hours Table -->
         <div class="pt-4 border-t border-cream-300">
           <h3 class="font-serif text-base font-bold text-espresso-900 mb-3 flex items-center gap-2">
             <i class="fa-regular fa-clock text-gold-500"></i>
@@ -708,7 +888,6 @@
           </ul>
         </div>
 
-        <!-- Social Icons -->
         <div class="flex space-x-3 pt-2">
           <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-cream-200 hover:bg-rouge-600 hover:text-white flex items-center justify-center transition text-espresso-800" aria-label="Instagram">
             <i class="fa-brands fa-instagram"></i>
@@ -719,7 +898,6 @@
         </div>
       </div>
 
-      <!-- Interactive Map Frame -->
       <div class="lg:col-span-7 h-[420px] rounded-3xl overflow-hidden border border-cream-200 shadow-xl relative bg-cream-200">
         <iframe 
           title="Le Grenier Google Map"
@@ -741,15 +919,13 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-espresso-800">
         
-        <!-- Brand -->
         <div class="space-y-3 md:col-span-2">
           <span class="font-serif text-2xl font-bold tracking-wider text-white">Le Grenier</span>
           <p class="text-xs text-cream-300 max-w-sm font-light leading-relaxed" data-i18n="footerTagline">
-            Autenttinen ranskalainen konditoria ja leipomo Meilahdessa. Teemme jokaisesta aamusta ja iltapäivästä nautinnon.
+            Autenttinen ranskalainen artesaanileipomo ja kahvila Meilahdessa. Tuoretta leipää, konditoriaa ja lämpimiä aamuja.
           </p>
         </div>
 
-        <!-- Links -->
         <div class="space-y-2">
           <h4 class="text-xs uppercase font-semibold tracking-wider text-gold-400" data-i18n="footerNavTitle">Pikalinkit</h4>
           <ul class="text-xs space-y-1.5 text-cream-300">
@@ -760,7 +936,6 @@
           </ul>
         </div>
 
-        <!-- Contact summary -->
         <div class="space-y-2">
           <h4 class="text-xs uppercase font-semibold tracking-wider text-gold-400" data-i18n="contactBadge">Meilahti, Helsinki</h4>
           <p class="text-xs text-cream-300">Pihlajatie 8, 00270 Helsinki</p>
@@ -770,8 +945,8 @@
       </div>
 
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-cream-300/70">
-        <p>© <span id="currentYear"></span> Le Grenier Boulangerie & Pâtisserie. All rights reserved.</p>
-        <p class="mt-2 sm:mt-0 font-serif italic text-gold-400">Fabriqué avec passion à Helsinki</p>
+        <p>© <span id="currentYear"></span> Le Grenier Artesaanileipomo & Kahvila. All rights reserved.</p>
+        <p class="mt-2 sm:mt-0 font-serif italic text-gold-400">Artisan Boulangerie • Helsinki</p>
       </div>
     </div>
   </footer>
@@ -797,6 +972,7 @@
     // --- 1. Multilingual Translations Dictionary (FI / EN / RU) ---
     const i18nData = {
       fi: {
+        navSubtitle: "Artesaanileipomo & Kahvila",
         navAbout: "Tarinamme",
         navMenu: "Menu",
         navGallery: "Tunnelma",
@@ -804,53 +980,108 @@
         navContact: "Yhteystiedot",
         navReserveBtn: "Varaa pöytä",
         heroBadgeStatus: "Tervetuloa Meilahteen",
-        heroTitlePart1: "Pariisin tuoksu ja",
-        heroTitlePart2: "artesaanileivonnan taika",
-        heroSubtitle: "Rapeat artesaanicroissantit, huolella haudutettu kahvi ja perinteiset ranskalaiset konditoriatuotteet leivottu joka aamu puhtaalla intohimolla.",
+        heroTitlePart1: "Aito ranskalainen",
+        heroTitlePart2: "artesaanileipomo Helsingissä",
+        heroSubtitle: "Tuoreet leivät, suussasulavat croissantit, korvapuustit ja klassiset ranskalaiset konditoriatuotteet leivottu joka aamu paikan päällä.",
         heroCtaMenu: "Tutustu Menuun",
         heroCtaReserve: "Varaa pöytä",
-        statFrenchButter: "Ranskalaista voita",
-        statBakedDaily: "Tuoretta joka aamu",
-        statGuestRating: "Asiakastyytyväisyys",
-        heroFloatBadgeSub: "Erikoiskahvit & Leivonnaiset",
-        heroFloatBadgeTitle: "Pariisilainen Aamiainen",
+        statCroissant: "Voi-croissant",
+        statBreakfast: "Aamiainen",
+        statArtisan: "Käsityötä",
+        heroFloatBadgeSub: "Uunituoreet leivät & herkut",
+        heroFloatBadgeTitle: "Artesaanileipomo",
         aboutBadge: "Filosofiamme",
-        aboutTitle: "Pala Pariisia Helsingin Meilahden sydämessä",
-        aboutDesc1: "Le Grenier syntyi haaveesta tuoda ranskalaisen leivontakulttuurin sielukkuus ja artesaanilaatu pohjoiseen. Me uskomme, että täydellinen aamu alkaa rapsahtavan lehtevällä croissantilla, aidoilla ranskalaisilla raaka-aineilla ja kiireettömällä kahvihetkellä.",
-        aboutDesc2: "Jokainen taikina nostatetaan pitkään ja leivotaan käsin joka aamuyö. Emme tee kompromisseja voin, jauhojen tai suklaan laadussa — jokainen pala kantaa mukanaan ranskalaisen pikkukahvilan lämpöä.",
-        aboutFeature1Title: "Artesaanijuuri",
-        aboutFeature1Desc: "Pitkä nostatusaika ja rikas aromi",
-        aboutFeature2Title: "Rakkaus yksityiskohtiin",
-        aboutFeature2Desc: "Klassiset reseptit ja huippuraaka-aineet",
-        menuBadge: "Herkulliset Elämykset",
-        menuTitle: "Kahvilan & Leipomon Menu",
-        menuSubtitle: "Valikoimamme leivotaan tuoreena joka aamu. Kysy henkilökunnalta päivän erikoisuuksista!",
-        tabPastry: "Leivonnaiset & Croissantit",
-        tabDesserts: "Konditoria & Kakut",
-        tabBreakfast: "Aamupala & Suolaiset",
+        aboutTitle: "Pariisin tuoksu ja lämpö Meilahden sydämessä",
+        aboutDesc1: "Le Grenier on ranskalaisen leivontaperinteen ja pohjoismaisen kodikkuuden kohtaamispaikka. Vaalimme aitoa käsityötä: nostatamme hapanjuuritaikinat huolellisesti, käytämme aitoa voita ja leivomme päivän tuotteet joka aamu omassa leipomossamme.",
+        aboutDesc2: "Valikoimastamme löydät niin ikoniset ranskalaiset leivonnaiset — croissantit, choux-leivokset, opéra-kakut ja éclairit — kuin suomalaisille rakkaat korvapuustit sekä täytetyt sämpylät ja patongit.",
+        aboutFeature1Title: "Levain & Ruislese",
+        aboutFeature1Desc: "Aito hapanjuuri ja pitkä lepoaika",
+        aboutFeature2Title: "Aamiainen & Lounas",
+        aboutFeature2Desc: "Lämpimät quichet ja runsaat menut",
+        menuBadge: "Artesaanileipomon Liitutaulu",
+        menuTitle: "Päivän Menu & Hinnasto",
+        menuSubtitle: "Kaikki tuotteemme leivotaan paikan päällä puhtaista raaka-aineista.",
+        badgeAamiainen: "Aamiainen",
+        badgeLounas: "Lounasmenu",
+        tabPastry: "Leivonnaiset & Pullat",
+        tabDesserts: "Konditoria & Herkut",
+        tabSavory: "Leivät & Suolaiset",
         tabDrinks: "Kahvit & Juomat",
-        mCroissantTitle: "Croissant au Beurre",
-        mCroissantDesc: "Perinteinen ranskalainen voicroissant. Täydellisen rapea kuori ja ilmavan lehtevä sisus.",
-        mChocolatTitle: "Pain au Chocolat",
-        mChocolatDesc: "Voitaikinaleivos kahdella tangolla täyteläistä tummaa Valrhona-suklaata.",
-        mAlmondTitle: "Croissant aux Amandes",
-        mAlmondDesc: "Mantelikreemillä täytetty ja paahdetuilla mantelilastuilla viimeistelty tuplapaistettu croissant.",
-        mEclairTitle: "Éclair au Chocolat",
-        mEclairDesc: "Tuulihattutaikina, samettinen suklaakreemitäyte ja kiiltävä tummasuklaakuorrute.",
-        mCitronTitle: "Tartelette au Citron Meringuée",
-        mCitronDesc: "Kirpeän raikas sitruunatahna murealla murotaikinapohjalla, päällä paahdettua marenkia.",
-        mMacaronTitle: "Macarons Artisanaux (3 kpl)",
-        mMacaronDesc: "Valikoima ranskalaisia mantelileivoksia: vadelma, pistaasi ja suolakinuski.",
-        mQuicheTitle: "Quiche Lorraine",
-        mQuicheDesc: "Perinteinen ranskalainen piiras: savustettua pekonia, emmental-juustoa ja pehmeää kermatäytettä.",
-        mBaguetteTitle: "Baguette Jambon-Beurre",
-        mBaguetteDesc: "Rapeaa talon patonkia, laadukasta maalaiskinkkua, aitoa kirnuvoita ja dijon-sinappia.",
-        mCafeAuLaitTitle: "Café au Lait",
-        mCafeAuLaitDesc: "Tummapaahtoista erikoiskahvia ja runsaasti pehmeää vaahdotettua maitoa isossa kulhossa tai kupissa.",
-        mChocolatChaudTitle: "Chocolat Chaud Parisien",
-        mChocolatChaudDesc: "Paksu ja samettisen täyteläinen kuuma kaakao sulatetusta tummasta suklaasta.",
-        woltBannerTitle: "Haluatko aamiaiset kotiin tai toimistolle?",
-        woltBannerDesc: "Nouda suoraan kahvilasta tai tilaa kotiinkuljetuksella.",
+        tagClassic: "Klassikko",
+        tagChoc: "Tumma suklaa",
+        tagSavory: "Suolainen",
+        tagHouseFav: "Suosikki",
+        tagNordic: "Pohjoismainen",
+        tagFreshBaked: "Uunituore",
+        tagFresh: "Raikas",
+        tagChefSpecial: "Erikoisuus",
+        tagHotSavory: "Lämmin ruoka",
+        tagCold: "Kylmä juoma",
+        // Menu item translations
+        m_croissant_title: "Croissant",
+        m_croissant_desc: "Perinteinen voicroissant, jossa on rapea kuori ja lehtevä sisus.",
+        m_pain_chocolat_title: "Pain au chocolat",
+        m_pain_chocolat_desc: "Klassinen ranskalainen voitaikinaleivos tummalla suklaalla.",
+        m_juustocroissant_title: "Juustocroissant",
+        m_juustocroissant_desc: "Juustolla gratinoitu lehtevä ja suolainen croissant.",
+        m_manteli_title: "Mantelicroissant",
+        m_manteli_desc: "Tuplapaistettu croissant mantelikreemitäytteellä ja paahdetuilla mantelilastuilla.",
+        m_korvapuusti_title: "Korvapuusti",
+        m_korvapuusti_desc: "Perinteinen kanelipulla reilulla kardemummalla ja kanelivoitäytteellä.",
+        m_voisilma_title: "Voisilmäpulla",
+        m_voisilma_desc: "Pehmeä pulla sokeroidulla voisydämellä ja kardemummalla.",
+        m_eclair_title: "Éclair",
+        m_eclair_desc: "Pitkänomainen tuulihattuleivos silkkisellä kreemitäytteellä ja kuorrutteella.",
+        m_choux_title: "Choux",
+        m_choux_desc: "Rapea tuulihattuleivos runsaalla vaniljakreemitäytteellä (Craquelin).",
+        m_amandine_title: "Amandine",
+        m_amandine_desc: "Perinteinen ranskalainen mantelileivos täyteläisellä mantelitäytteellä.",
+        m_fraisier_title: "Fraisier",
+        m_fraisier_desc: "Klassinen ranskalainen mansikkaleivos, mousseline-kreemi ja pehmeä kakkupohja.",
+        m_opera_title: "Opéra",
+        m_opera_desc: "Hienostunut kerrosleivos kahvisiirapilla, suklaaganachella ja kahvikreemillä.",
+        m_millefeuille_title: "Mille-feuilles",
+        m_millefeuille_desc: "Rapeita karamellisoituja voitaikinakerroksia ja vaniljaista konditoriakreemiä.",
+        m_levain_title: "Levain-patonki",
+        m_levain_desc: "Perinteinen hapanjuuripatonki, rapea kuori ja ilmava sitkeä sisus.",
+        m_batard_title: "Bâtard",
+        m_batard_desc: "Soikea ranskalainen artesaanijuurella leivottu maalaileipä.",
+        m_ruislese_title: "Ruislese",
+        m_ruislese_desc: "Rukiinen ja kuitupitoinen artesaanileipä syvällä maulla.",
+        m_monisiemen_title: "Monisiemensämpylä",
+        m_monisiemen_desc: "Tuore artesaanisämpylä runsailla auringonkukan- ja pellavansiemenillä.",
+        m_porkkana_title: "Porkkanasämpylä",
+        m_porkkana_desc: "Mehevä ja pehmeä aamiaissämpylä aidolla porkkanaraasteella.",
+        m_quiche_title: "Quiche",
+        m_quiche_desc: "Päivän lämmin ranskalainen piiras rapealla pohjalla ja kermaisella täytteellä.",
+        m_taytetty_croissant_title: "Täytetty croissant",
+        m_taytetty_croissant_desc: "Tuore croissant täytettynä juustolla, laadukkaalla kinkulla tai kasviksilla.",
+        m_taytetty_sampyla_title: "Täytetty sämpylä",
+        m_taytetty_sampyla_desc: "Juureen leivottu sämpylä runsailla tuoreilla täytteillä.",
+        m_sandwich_title: "Sandwich",
+        m_sandwich_desc: "Runsas ranskalainen patonki- tai leipävoileipä artesaanitäytteillä.",
+        m_americano_title: "Americano",
+        m_americano_desc: "Espresso pidennettynä kuumalla vedellä, syvä ja pehmeä maku.",
+        m_cappuccino_title: "Cappuccino",
+        m_cappuccino_desc: "Täydellisen tasapainoinen espresso ja silkkinen maitovaahto.",
+        m_cafelatte_title: "Café latte",
+        m_cafelatte_desc: "Mieto ja kermainen maitokahvi tuoreella espressopohjalla.",
+        m_jaalatte_title: "Jää latte",
+        m_jaalatte_desc: "Raikas kylmä maitokahvi jäillä ja vahvalla espressolla.",
+        m_espresso_title: "Espresso",
+        m_espresso_desc: "Voimakas ja intensiivinen kahviuute.",
+        m_kahvi_title: "Kahvi (Suodatinkahvi)",
+        m_kahvi_desc: "Tuore ja laadukas paikan päällä suodatettu suodatinkahvi.",
+        m_cafeaulait_title: "Café au lait",
+        m_cafeaulait_desc: "Perinteinen ranskalainen maitokahvi aamukuppiin tarjoiltuna.",
+        m_kaakao_title: "Kaakao",
+        m_kaakao_desc: "Täyteläinen ja pehmeä kuuma suklaakaakao.",
+        m_tee_title: "Tee",
+        m_tee_desc: "Haudutettu laadukas irtotee (musta, vihreä, yrtti).",
+        m_kylmat_title: "Soda / Vichy / Mehu",
+        m_kylmat_desc: "Virvoitusjuomat, kivennäisvedet tai raikkaat mehut.",
+        woltBannerTitle: "Haluatko tuoretta leipää ja herkkuja kotiin?",
+        woltBannerDesc: "Nouda suoraan Meilahden leipomosta tai tilaa kotiinkuljetuksella.",
         galleryBadge: "Galleriamme",
         galleryTitle: "Tunnelmia Le Grenieristä",
         resBadge: "Pöytävaraus",
@@ -865,9 +1096,9 @@
         btnSubmitRes: "Vahvista pöytävaraus",
         reviewsBadge: "Asiakaskokemuksia",
         reviewsTitle: "Mitä vieraamme sanovat",
-        review1Text: '"Koko Helsingin parhaat croissantit, ei epäilystäkään. Kuori rouskuu ja voi maistuu taivaalliselta. Tuntuu kuin istuisi pariisilaisessa bistrossa Meilahden sijaan."',
-        review2Text: '"A true hidden gem! The almond croissant and dark hot chocolate are out of this world. Super friendly service and cozy, quiet ambience."',
-        review3Text: '"Невероятно уютная кондитерская. Лимонный тарт с меренгой — это шедевр! Идеальный баланс кислинки и сладости. Обязательно вернемся."',
+        review1Text: '"Koko Helsingin parhaat croissantit ja mantelikierre! Kuori rouskuu ja voi maistuu aidolta. Tuntuu kuin istuisi pariisilaisessa leipomossa Meilahden sijaan."',
+        review2Text: '"A true gem in Helsinki! The almond croissant and fresh levain baguette are unmatched. Great coffee and quiet, lovely atmosphere."',
+        review3Text: '"Невероятное место! Мильфей и шу с кремом просто бесподобны, а свежий багет на закваске покупаем домой каждую неделю. Браво пекарям!"',
         contactBadge: "Tule käymään",
         contactTitle: "Sijainti & Aukioloajat",
         addressLabel: "Osoite",
@@ -877,12 +1108,13 @@
         daysMonFri: "Maanantai – Perjantai",
         daySat: "Lauantai",
         daySun: "Sunnuntai",
-        footerTagline: "Autenttinen ranskalainen konditoria ja leipomo Meilahdessa. Teemme jokaisesta aamusta ja iltapäivästä nautinnon.",
+        footerTagline: "Autenttinen ranskalainen artesaanileipomo ja kahvila Meilahdessa. Tuoretta leipää, konditoriaa ja lämpimiä aamuja.",
         footerNavTitle: "Pikalinkit",
         modalTitle: "Merci beaucoup!",
         modalMsg: "Pöytävarauspyyntösi on vastaanotettu onnistuneesti. Olemme lähettäneet vahvistuksen sähköpostiisi. Nähdään pian Le Grenierissä!"
       },
       en: {
+        navSubtitle: "Artisan Bakery & Café",
         navAbout: "Our Story",
         navMenu: "Menu",
         navGallery: "Ambience",
@@ -890,58 +1122,113 @@
         navContact: "Contact",
         navReserveBtn: "Book a Table",
         heroBadgeStatus: "Welcome to Meilahti",
-        heroTitlePart1: "The Aroma of Paris &",
-        heroTitlePart2: "Artisan Bakery Craft",
-        heroSubtitle: "Flaky artisan croissants, meticulously crafted coffee, and traditional French pastries baked fresh every morning with pure passion.",
+        heroTitlePart1: "Authentic French",
+        heroTitlePart2: "Artisan Bakery in Helsinki",
+        heroSubtitle: "Fresh artisanal sourdough bread, flaky croissants, Finnish cinnamon buns, and traditional French pastries baked on-site every morning.",
         heroCtaMenu: "Explore Menu",
         heroCtaReserve: "Reserve Table",
-        statFrenchButter: "French Butter",
-        statBakedDaily: "Baked Fresh Daily",
-        statGuestRating: "Guest Rating",
-        heroFloatBadgeSub: "Specialty Coffee & Pastries",
-        heroFloatBadgeTitle: "Parisian Breakfast",
+        statCroissant: "Butter Croissant",
+        statBreakfast: "Breakfast Set",
+        statArtisan: "Handmade",
+        heroFloatBadgeSub: "Oven-fresh bread & pastries",
+        heroFloatBadgeTitle: "Artisan Bakery",
         aboutBadge: "Our Philosophy",
-        aboutTitle: "A Slice of Paris in Meilahti, Helsinki",
-        aboutDesc1: "Le Grenier was born from the desire to bring the soul and authentic craftsmanship of French boulangerie culture to Helsinki. We believe every great morning begins with a warm, flaky croissant and a peaceful cup of coffee.",
-        aboutDesc2: "Each batch of sourdough is long-fermented and crafted by hand at dawn. We make zero compromises on the quality of French butter, flours, and chocolate.",
-        aboutFeature1Title: "Artisan Sourdough",
-        aboutFeature1Desc: "Slow fermentation for optimal flavour",
-        aboutFeature2Title: "Passion for Detail",
-        aboutFeature2Desc: "Classic French recipes & supreme ingredients",
-        menuBadge: "Gourmet Delights",
-        menuTitle: "Bakery & Café Menu",
-        menuSubtitle: "Baked fresh every dawn. Inquire with our barista for daily chef specials!",
-        tabPastry: "Pastries & Croissants",
-        tabDesserts: "Pâtisserie & Cakes",
-        tabBreakfast: "Breakfast & Savory",
+        aboutTitle: "The Aromas of Paris in the Heart of Meilahti",
+        aboutDesc1: "Le Grenier blends time-honored French baking traditions with Nordic warmth. We celebrate true craft: long cold fermentations for sourdough, premium French butter, and baking fresh batches every dawn.",
+        aboutDesc2: "From delicate choux pastries, opulent Opéra cakes, and mille-feuilles to hearty rye breads and fresh-filled lunch baguettes, every item is crafted with love and precision.",
+        aboutFeature1Title: "Levain & Rye Bran",
+        aboutFeature1Desc: "Wild sourdough starter & slow fermentation",
+        aboutFeature2Title: "Breakfast & Lunch",
+        aboutFeature2Desc: "Warm savory quiches and daily combo menus",
+        menuBadge: "Chalkboard Specials",
+        menuTitle: "Daily Menu & Prices",
+        menuSubtitle: "Handcrafted daily on Pihlajatie using pure, natural ingredients.",
+        badgeAamiainen: "Breakfast Set",
+        badgeLounas: "Lunch Menu",
+        tabPastry: "Pastries & Buns",
+        tabDesserts: "Pâtisserie & Treats",
+        tabSavory: "Breads & Savory",
         tabDrinks: "Coffee & Drinks",
-        mCroissantTitle: "Croissant au Beurre",
-        mCroissantDesc: "Classic French butter croissant. Distinctly crispy exterior with delicate honeycomb layers.",
-        mChocolatTitle: "Pain au Chocolat",
-        mChocolatDesc: "Golden laminated pastry filled with two batons of intense dark Valrhona chocolate.",
-        mAlmondTitle: "Croissant aux Amandes",
-        mAlmondDesc: "Twice-baked butter croissant loaded with rich frangipane almond cream and toasted flakes.",
-        mEclairTitle: "Éclair au Chocolat",
-        mEclairDesc: "Crisp choux pastry stuffed with silky chocolate crème pâtissière and topped with dark glaze.",
-        mCitronTitle: "Tartelette au Citron Meringuée",
-        mCitronDesc: "Tangy lemon curd in a crumbly sweet pastry shell, crowned with torched Italian meringue.",
-        mMacaronTitle: "Artisan Macarons (3 pcs)",
-        mMacaronDesc: "Assortment of handmade French almond macarons: raspberry, pistachio, and salted caramel.",
-        mQuicheTitle: "Quiche Lorraine",
-        mQuicheDesc: "Traditional savoury tart with smoked bacon lardons, aged Emmental, and luscious egg custard.",
-        mBaguetteTitle: "Baguette Jambon-Beurre",
-        mBaguetteDesc: "Fresh artisanal baguette, premium country ham, Normandy butter, and a touch of Dijon mustard.",
-        mCafeAuLaitTitle: "Café au Lait",
-        mCafeAuLaitDesc: "Rich dark espresso paired with generous steamed velvety milk served in a traditional bowl.",
-        mChocolatChaudTitle: "Chocolat Chaud Parisien",
-        mChocolatChaudDesc: "Ultra-thick, velvet-smooth Parisian hot chocolate melted from 70% dark cocoa.",
-        woltBannerTitle: "Cravings delivered to your home or desk?",
-        woltBannerDesc: "Pick up fresh in-store or order conveniently online.",
-        galleryBadge: "Atmosphere",
+        tagClassic: "Classic",
+        tagChoc: "Dark Chocolate",
+        tagSavory: "Savory",
+        tagHouseFav: "Favorite",
+        tagNordic: "Nordic Classic",
+        tagFreshBaked: "Freshly Baked",
+        tagFresh: "Berry Fresh",
+        tagChefSpecial: "House Special",
+        tagHotSavory: "Warm Savory",
+        tagCold: "Iced / Cold",
+        // Menu item translations
+        m_croissant_title: "Croissant",
+        m_croissant_desc: "Traditional French butter croissant with a crisp golden shell and airy honeycomb interior.",
+        m_pain_chocolat_title: "Pain au chocolat",
+        m_pain_chocolat_desc: "Classic laminated pastry enclosing two rich batons of dark French chocolate.",
+        m_juustocroissant_title: "Cheese Croissant",
+        m_juustocroissant_desc: "Flaky butter croissant baked with a gratinated layer of savoury cheese.",
+        m_manteli_title: "Almond Croissant",
+        m_manteli_desc: "Twice-baked butter croissant loaded with almond frangipane and toasted almond flakes.",
+        m_korvapuusti_title: "Korvapuusti (Cinnamon Bun)",
+        m_korvapuusti_desc: "Finnish traditional cinnamon cardamom bun with buttery cinnamon swirl.",
+        m_voisilma_title: "Voisilmäpulla (Butter Eye Bun)",
+        m_voisilma_desc: "Soft cardamom bun with a rich, caramelized sugar-butter center.",
+        m_eclair_title: "Éclair",
+        m_eclair_desc: "Crisp choux pastry shell filled with silky cream and topped with rich glaze.",
+        m_choux_title: "Choux Craquelin",
+        m_choux_desc: "Crisp Parisian choux bun generously piped with smooth vanilla pastry cream.",
+        m_amandine_title: "Amandine Tart",
+        m_amandine_desc: "Traditional French tart filled with sweet, fragrant almond cream.",
+        m_fraisier_title: "Fraisier",
+        m_fraisier_desc: "Classic French strawberry cake with delicate génoise and mousseline cream.",
+        m_opera_title: "Opéra",
+        m_opera_desc: "Decadent layered cake with almond sponge soaked in coffee syrup, chocolate ganache, and coffee buttercream.",
+        m_millefeuille_title: "Mille-feuilles",
+        m_millefeuille_desc: "Crisp caramelized puff pastry sheets layered with rich vanilla custard.",
+        m_levain_title: "Levain Baguette",
+        m_levain_desc: "Artisanal naturally leavened sourdough baguette with deep flavour and crackly crust.",
+        m_batard_title: "Bâtard Country Loaf",
+        m_batard_desc: "Oval French rustic sourdough bread with a chewy crumb and robust crust.",
+        m_ruislese_title: "Ruislese (Rye Bran Bread)",
+        m_ruislese_desc: "Hearty, fiber-rich Finnish artisan rye sourdough loaf.",
+        m_monisiemen_title: "Multi-Seed Roll",
+        m_monisiemen_desc: "Fresh morning roll loaded with toasted sunflower, flax, and sesame seeds.",
+        m_porkkana_title: "Carrot Bread Roll",
+        m_porkkana_desc: "Wonderfully soft and moist morning roll baked with fresh grated carrots.",
+        m_quiche_title: "Quiche",
+        m_quiche_desc: "Traditional warm French savory tart with buttery crust and rich egg-cream filling.",
+        m_taytetty_croissant_title: "Filled Croissant",
+        m_taytetty_croissant_desc: "Fresh croissant filled with French cheese, smoked ham, or fresh greens.",
+        m_taytetty_sampyla_title: "Filled Morning Roll",
+        m_taytetty_sampyla_desc: "Crusty artisan bread roll generously packed with fresh breakfast toppings.",
+        m_sandwich_title: "Baguette Sandwich",
+        m_sandwich_desc: "Substantial French artisan sandwich prepared on freshly baked bread.",
+        m_americano_title: "Americano",
+        m_americano_desc: "Rich espresso diluted with hot water for a smooth, balanced cup.",
+        m_cappuccino_title: "Cappuccino",
+        m_cappuccino_desc: "Balanced specialty espresso topped with velvety steamed milk foam.",
+        m_cafelatte_title: "Café latte",
+        m_cafelatte_desc: "Creamy and mild coffee prepared with silky steamed milk and espresso.",
+        m_jaalatte_title: "Iced Latte",
+        m_jaalatte_desc: "Refreshing chilled espresso over cold milk and clear ice cubes.",
+        m_espresso_title: "Espresso",
+        m_espresso_desc: "Intense, aromatic Italian-French style espresso extraction.",
+        m_kahvi_title: "Filter Coffee",
+        m_kahvi_desc: "Freshly brewed high-grade filter coffee.",
+        m_cafeaulait_title: "Café au lait",
+        m_cafeaulait_desc: "Classic Parisian morning coffee served with equal parts coffee and hot milk.",
+        m_kaakao_title: "Hot Chocolate",
+        m_kaakao_desc: "Rich, velvety European-style cocoa made with fine chocolate.",
+        m_tee_title: "Artisan Loose Tea",
+        m_tee_desc: "Premium selection of loose-leaf black, green, or herbal teas.",
+        m_kylmat_title: "Soda / Vichy Sparkling / Juice",
+        m_kylmat_desc: "Chilled mineral water, sodas, or natural fruit juices.",
+        woltBannerTitle: "Fresh bread & pastries delivered to your door?",
+        woltBannerDesc: "Pick up on Pihlajatie or order convenient courier delivery.",
+        galleryBadge: "Ambience",
         galleryTitle: "Moments at Le Grenier",
         resBadge: "Reservations",
         resTitle: "Reserve a Table",
-        resSubtitle: "Secure your corner for an idyllic morning breakfast or cozy afternoon treat.",
+        resSubtitle: "Secure your table for morning breakfast or an afternoon pastry date.",
         labelName: "Full Name *",
         labelPhone: "Phone Number *",
         labelDate: "Date *",
@@ -952,8 +1239,8 @@
         reviewsBadge: "Guest Testimonials",
         reviewsTitle: "Loved by Locals & Travelers",
         review1Text: '"Without a doubt the finest croissants in Helsinki. Extremely flaky and rich in butter flavor. Feels like sitting in a real Parisian bakery right in Meilahti."',
-        review2Text: '"A true hidden gem! The almond croissant and dark hot chocolate are out of this world. Super friendly service and cozy, quiet ambience."',
-        review3Text: '"An exceptionally cozy pastry shop. The lemon meringue tart is pure art! Perfect acidity and sweetness balance."',
+        review2Text: '"A true gem in Helsinki! The almond croissant and fresh levain baguette are unmatched. Great coffee and quiet, lovely atmosphere."',
+        review3Text: '"Невероятное место! Мильфей и шу с кремом просто бесподобны, а свежий багет на закваске покупаем домой каждую неделю. Браво пекарям!"',
         contactBadge: "Visit Us",
         contactTitle: "Location & Opening Hours",
         addressLabel: "Address",
@@ -963,12 +1250,13 @@
         daysMonFri: "Monday – Friday",
         daySat: "Saturday",
         daySun: "Sunday",
-        footerTagline: "Authentic French pâtisserie and boulangerie nestled in Meilahti. Elevating everyday moments with artisanal pastry.",
+        footerTagline: "Authentic French artisan bakery & café nestled in Meilahti. Elevating everyday moments with artisanal bread and pastry.",
         footerNavTitle: "Quick Links",
         modalTitle: "Merci beaucoup!",
         modalMsg: "Your reservation request has been received! We sent a confirmation summary to your email. We look forward to welcoming you to Le Grenier."
       },
       ru: {
+        navSubtitle: "Ремесленная пекарня & Кафе",
         navAbout: "О нас",
         navMenu: "Меню",
         navGallery: "Атмосфера",
@@ -976,53 +1264,108 @@
         navContact: "Контакты",
         navReserveBtn: "Забронировать",
         heroBadgeStatus: "Добро пожаловать в Мейлахти",
-        heroTitlePart1: "Аромат Парижа и",
-        heroTitlePart2: "магия ремесленной выпечки",
-        heroSubtitle: "Хрустящие круассаны на сливочном масле, спешелти кофе и классические французские десерты, выпекаемые каждое утро с любовью.",
+        heroTitlePart1: "Настоящая французская",
+        heroTitlePart2: "ремесленная пекарня в Хельсинки",
+        heroSubtitle: "Свежий ремесленный хлеб, хрустящие круассаны, финские булочки с корицей и классические французские десерты, выпекаемые каждое утро на месте.",
         heroCtaMenu: "Посмотреть Меню",
         heroCtaReserve: "Забронировать стол",
-        statFrenchButter: "Французское масло",
-        statBakedDaily: "Свежая выпечка с утра",
-        statGuestRating: "Рейтинг гостей",
-        heroFloatBadgeSub: "Кофе & Десерты",
-        heroFloatBadgeTitle: "Парижский завтрак",
+        statCroissant: "Круассан",
+        statBreakfast: "Завтрак",
+        statArtisan: "Ручная работа",
+        heroFloatBadgeSub: "Свежий хлеб и выпечка из печи",
+        heroFloatBadgeTitle: "Ремесленная пекарня",
         aboutBadge: "Наша философия",
-        aboutTitle: "Уголок Парижа в тихом центре Мейлахти",
-        aboutDesc1: "Le Grenier родился из любви к французской культуре boulangerie. Мы верим, что идеальное утро начинается с хрустящего слоёного круассана, натурального сливочного масла и неторопливой чашки кофе.",
-        aboutDesc2: "Каждое утро наши пекари вручную замешивают тесто по старинным французским рецептам. Никаких компромиссов: только настоящее сливочное масло, французская мука и благородный шоколад.",
-        aboutFeature1Title: "Живая закваска",
-        aboutFeature1Desc: "Длительная ферментация и глубокий аромат",
-        aboutFeature2Title: "Внимание к деталям",
-        aboutFeature2Desc: "Традиционная рецептура и премиальные ингредиенты",
-        menuBadge: "Изысканный выбор",
-        menuTitle: "Меню пекарни и кондитерской",
-        menuSubtitle: "Выпекаем свежие партии каждый рассвет. Спросите бариста о десертах дня!",
-        tabPastry: "Выпечка & Круассаны",
+        aboutTitle: "Аромат Парижа и тепло в сердце Мейлахти",
+        aboutDesc1: "Le Grenier объединяет старинные французские традиции пекарского дела и скандинавский уют. Мы ценим честный ручной труд: длительная холодная ферментация заквасок, натуральное французское сливочное масло и выпечка на рассвете.",
+        aboutDesc2: "В нашем меню — легендарные французские десерты (мильфей, эклеры, шу, опера), хрустящие багеты левен, традиционные булочки корвапуусти и сытные сэндвичи.",
+        aboutFeature1Title: "Левен и ржаные отруби",
+        aboutFeature1Desc: "Живая закваска и медленное созревание",
+        aboutFeature2Title: "Завтрак и Ланч",
+        aboutFeature2Desc: "Горячие киши и выгодные комбо-наборы",
+        menuBadge: "Крейдяная доска пекарни",
+        menuTitle: "Меню дня и цены",
+        menuSubtitle: "Вся выпечка готовится вручную каждое утро на Pihlajatie 8.",
+        badgeAamiainen: "Завтрак (Aamiainen)",
+        badgeLounas: "Ланч-меню (Lounas)",
+        tabPastry: "Выпечка & Булочки",
         tabDesserts: "Кондитерская & Десерты",
-        tabBreakfast: "Завтраки & Сэндвичи",
+        tabSavory: "Хлеб & Сытное",
         tabDrinks: "Кофе & Напитки",
-        mCroissantTitle: "Классический круассан",
-        mCroissantDesc: "Традиционный французский круассан на натуральном сливочном масле. Невероятно слоистый и воздушный.",
-        mChocolatTitle: "Пан о Шоколя",
-        mChocolatDesc: "Золотистая слоеная булочка с двумя полосками насыщенного темного шоколада Valrhona.",
-        mAlmondTitle: "Миндальный круассан",
-        mAlmondDesc: "Круассан двойного запекания с нежным кремом франжипан и лепестками обжаренного миндаля.",
-        mEclairTitle: "Шоколадный эклер",
-        mEclairDesc: "Заварное тесто, бархатный заварной шоколадный крем и зеркальная глазурь.",
-        mCitronTitle: "Лимонный тарт с меренгой",
-        mCitronDesc: "Песочная основа с ярким лимонным курдом под шапкой обожженной итальянской меренги.",
-        mMacaronTitle: "Макаронс ручной работы (3 шт)",
-        mMacaronDesc: "Набор нежных миндальных пирожных: малина, фисташка и соленая карамель.",
-        mQuicheTitle: "Киш Лорен",
-        mQuicheDesc: "Классический открытый французский пирог с копченым беконом, сыром Эмменталь и сливочной заливкой.",
-        mBaguetteTitle: "Багет Жамбон-Бёр",
-        mBaguetteDesc: "Хрустящий крафтовый багет, фермерская ветчина, сливочное масло и немного дижонской горчицы.",
-        mCafeAuLaitTitle: "Кафе о Ле",
-        mCafeAuLaitDesc: "Классический французский кофе с обилием бархатистого взбитого молока.",
-        mChocolatChaudTitle: "Горячий шоколад по-парижски",
-        mChocolatChaudDesc: "Густой, бархатистый напиток из растопленного темного шоколада 70%.",
-        woltBannerTitle: "Хотите свежий завтрак с доставкой?",
-        woltBannerDesc: "Заберите заказ лично или оформите доставку прямо к вашей двери.",
+        tagClassic: "Классика",
+        tagChoc: "Темный шоколад",
+        tagSavory: "Сытное",
+        tagHouseFav: "Хит",
+        tagNordic: "Скандинавская классика",
+        tagFreshBaked: "Из печи",
+        tagFresh: "Свежие ягоды",
+        tagChefSpecial: "Шедевр",
+        tagHotSavory: "Горячее блюдо",
+        tagCold: "Холодный напиток",
+        // Menu item translations
+        m_croissant_title: "Круассан (Croissant)",
+        m_croissant_desc: "Традиционный французский круассан на сливочном масле с хрустящей корочкой и воздушными слоями.",
+        m_pain_chocolat_title: "Пан о шоколя (Pain au chocolat)",
+        m_pain_chocolat_desc: "Слоеная булочка с двумя брусочками насыщенного французского темного шоколада.",
+        m_juustocroissant_title: "Сырный круассан (Juustocroissant)",
+        m_juustocroissant_desc: "Слоеный круассан, запеченный под аппетитной сырной корочкой.",
+        m_manteli_title: "Миндальный круассан (Mantelicroissant)",
+        m_manteli_desc: "Круассан двойного запекания с нежным кремом франжипан и лепестками миндаля.",
+        m_korvapuusti_title: "Корвапуусти (Korvapuusti)",
+        m_korvapuusti_desc: "Традиционная финская булочка с корицей, кардамоном и тростниковым сахаром.",
+        m_voisilma_title: "Войсильмяпулла (Voisilmäpulla)",
+        m_voisilma_desc: "Сдобная булочка с тающей масляно-сахарной серединкой.",
+        m_eclair_title: "Эклер (Éclair)",
+        m_eclair_desc: "Нежное заварное тесто с бархатистым кремом под глянцевой глазурью.",
+        m_choux_title: "Шу с кремом (Choux)",
+        m_choux_desc: "Хрустящее пирожное шу с кракелином и наполнителем из ванильного крема дипломат.",
+        m_amandine_title: "Амандин (Amandine)",
+        m_amandine_desc: "Традиционная французская тарталетка с насыщенным миндальным кремом.",
+        m_fraisier_title: "Фрезье (Fraisier)",
+        m_fraisier_desc: "Классическое клубничное пирожное с нежным кремом муслин и бисквитом.",
+        m_opera_title: "Опера (Opéra)",
+        m_opera_desc: "Изысканное слоеное пирожное с миндальным бисквитом, кофейным сиропом и ганашем.",
+        m_millefeuille_title: "Мильфей (Mille-feuilles)",
+        m_millefeuille_desc: "Хрустящие карамелизированные слои слоеного теста с нежным заварным кремом.",
+        m_levain_title: "Багет Левен (Levain-patonki)",
+        m_levain_desc: "Аутентичный французский багет длительного брожения на закваске левен.",
+        m_batard_title: "Батард (Bâtard)",
+        m_batard_desc: "Овальный деревенский хлеб на закваске с упругим мякишем и хрустящей корочкой.",
+        m_ruislese_title: "Ржаной хлеб с отрубями (Ruislese)",
+        m_ruislese_desc: "Полезный крафтовый хлеб из ржаной муки и отрубей с насыщенным ароматом.",
+        m_monisiemen_title: "Злаковая булочка (Monisiemensämpylä)",
+        m_monisiemen_desc: "Свежая булочка, щедро усыпанная семенами подсолнечника, льна и кунжута.",
+        m_porkkana_title: "Морковная булочка (Porkkanasämpylä)",
+        m_porkkana_desc: "Мягкая и сочная булочка с добавлением тертой свежей моркови.",
+        m_quiche_title: "Киш (Quiche)",
+        m_quiche_desc: "Открытый французский пирог на песочном тесте с нежной яично-сливочной начинкой.",
+        m_taytetty_croissant_title: "Сэндвич-круассан (Täytetty croissant)",
+        m_taytetty_croissant_desc: "Круассан со свежей начинкой: сыр, ветчина или свежие сезонные овощи.",
+        m_taytetty_sampyla_title: "Сэндвич-булочка (Täytetty sämpylä)",
+        m_taytetty_sampyla_desc: "Ремесленная булочка со свежим сливочным маслом, сыром и зеленью.",
+        m_sandwich_title: "Сэндвич (Sandwich)",
+        m_sandwich_desc: "Большой сытный сэндвич на хрустящем багете с фермерскими деликатесами.",
+        m_americano_title: "Американо",
+        m_americano_desc: "Эспрессо с добавлением горячей воды для мягкого и чистого вкуса.",
+        m_cappuccino_title: "Капучино",
+        m_cappuccino_desc: "Гармоничное сочетание эспрессо и шелковистой молочной пены.",
+        m_cafelatte_title: "Кафе латте",
+        m_cafelatte_desc: "Нежный кофе с большим количеством вспененного молока.",
+        m_jaalatte_title: "Айс латте",
+        m_jaalatte_desc: "Освежающий холодный кофе со льдом и молоком.",
+        m_espresso_title: "Эспрессо",
+        m_espresso_desc: "Насыщенный и плотный классический кофейный шот.",
+        m_kahvi_title: "Фильтр-кофе (Kahvi)",
+        m_kahvi_desc: "Свежесваренный фильтр-кофе из отборных кофейных зерен.",
+        m_cafeaulait_title: "Кафе о ле",
+        m_cafeaulait_desc: "Традиционный парижский утренний кофе с молоком в большой чашке.",
+        m_kaakao_title: "Горячий шоколад / Какао",
+        m_kaakao_desc: "Густой согревающий какао на основе качественного темного шоколада.",
+        m_tee_title: "Листовой чай",
+        m_tee_desc: "Отборный черный, зеленый или травяной чай.",
+        m_kylmat_title: "Содовая / Вода Vichy / Сок",
+        m_kylmat_desc: "Газированная вода, финская минеральная вода Vichy или соки.",
+        woltBannerTitle: "Хотите свежий хлеб и десерты с доставкой?",
+        woltBannerDesc: "Заберите на Pihlajatie 8 или закажите быструю доставку через курьера.",
         galleryBadge: "Атмосфера",
         galleryTitle: "Мгновения в Le Grenier",
         resBadge: "Бронирование",
@@ -1038,8 +1381,8 @@
         reviewsBadge: "Отзывы гостей",
         reviewsTitle: "Нас рекомендуют",
         review1Text: '"Определенно лучшие круассаны в Хельсинки! Хрустящая корочка и божественный сливочный вкус. Будто перенесся на утреннюю улочку Парижа."',
-        review2Text: '"A true hidden gem! The almond croissant and dark hot chocolate are out of this world. Super friendly service and cozy, quiet ambience."',
-        review3Text: '"Невероятно уютная кондитерская. Лимонный тарт с меренгой — это шедевр! Идеальный баланс кислинки и сладости. Обязательно вернемся."',
+        review2Text: '"A true gem in Helsinki! The almond croissant and fresh levain baguette are unmatched. Great coffee and quiet, lovely atmosphere."',
+        review3Text: '"Невероятное место! Мильфей и шу с кремом просто бесподобны, а свежий багет на закваске покупаем домой каждую неделю. Браво пекарям!"',
         contactBadge: "Ждем вас в гости",
         contactTitle: "Локация и Часы работы",
         addressLabel: "Адрес",
@@ -1049,7 +1392,7 @@
         daysMonFri: "Понедельник – Пятница",
         daySat: "Суббота",
         daySun: "Воскресенье",
-        footerTagline: "Аутентичная французская пекарня и кондитерская в Мейлахти. Дарим радость каждого кусочка.",
+        footerTagline: "Аутентичная французская ремесленная пекарня и кафе в Мейлахти. Дарим тепло и вкус каждого кусочка.",
         footerNavTitle: "Навигация",
         modalTitle: "Merci beaucoup!",
         modalMsg: "Ваш запрос на бронирование успешно принят! Мы отправили подтверждение на указанные контакты. Ждем вас в Le Grenier!"
@@ -1062,7 +1405,7 @@
       currentLang = lang;
       localStorage.setItem('legrenier_lang', lang);
 
-      // Update active state in desktop switcher
+      // Active state on desktop
       document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('bg-rouge-600', 'text-white');
         btn.classList.add('text-espresso-800');
@@ -1073,7 +1416,7 @@
         activeBtn.classList.remove('text-espresso-800');
       }
 
-      // Update active state in mobile switcher
+      // Active state on mobile
       document.querySelectorAll('.lang-btn-mobile').forEach(btn => {
         if (btn.innerText.toLowerCase() === lang) {
           btn.className = "lang-btn-mobile px-2 py-0.5 rounded-full bg-rouge-600 text-white";
@@ -1095,18 +1438,16 @@
 
     // --- 2. Menu Category Filtering ---
     function filterMenu(category) {
-      // Toggle Tab Buttons Styling
-      const tabs = ['pastry', 'desserts', 'breakfast', 'drinks'];
+      const tabs = ['pastry', 'desserts', 'savory', 'drinks'];
       tabs.forEach(tab => {
         const tabBtn = document.getElementById(`tab-${tab}`);
         if (tab === category) {
-          tabBtn.className = 'menu-tab px-5 py-2 rounded-full text-xs font-semibold bg-rouge-600 text-white shadow transition';
+          tabBtn.className = 'menu-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-rouge-600 text-white shadow transition';
         } else {
-          tabBtn.className = 'menu-tab px-5 py-2 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition';
+          tabBtn.className = 'menu-tab px-5 py-2.5 rounded-full text-xs font-semibold bg-cream-200 text-espresso-800 hover:bg-cream-300 transition';
         }
       });
 
-      // Show / Hide Menu items
       const items = document.querySelectorAll('.menu-item');
       items.forEach(item => {
         if (item.classList.contains(category)) {
@@ -1144,7 +1485,6 @@
       modal.classList.remove('flex');
     }
 
-    // Close modal on click outside
     document.getElementById('reservationModal').addEventListener('click', (e) => {
       if (e.target.id === 'reservationModal') {
         closeModal();
@@ -1153,10 +1493,7 @@
 
     // --- 5. Init on DOM Loaded ---
     window.addEventListener('DOMContentLoaded', () => {
-      // Set current year in footer
       document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-      // Check saved language preference or default to Finnish
       const savedLang = localStorage.getItem('legrenier_lang') || 'fi';
       changeLanguage(savedLang);
     });
